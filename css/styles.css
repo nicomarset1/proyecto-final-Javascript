@@ -182,8 +182,7 @@ footer p {
 }
 
 #fijado img{
-    width: 45px;
-    height: 45px;
+    width: 60px;
     position: fixed;
     bottom: 15px;
     right: 15px; }

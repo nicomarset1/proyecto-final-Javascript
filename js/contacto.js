@@ -29,12 +29,21 @@ contactform.innerHTML = `        <form action="">
 </p>
 </form>`
 
+const formulario = document.querySelector("#contactform");
+
 const boton = document.getElementById(`botonera`);
 		boton.addEventListener("click", (event) => {
             event.preventDefault()
 
-        const nombre = document.querySelector(`input[name="nombre"]`).value;
-        const apellido = document.querySelector(`input[name="apellido"]`).value;
+            const nombreInput = document.querySelector(`input[name="nombre"]`);
+            const apellidoInput = document.querySelector(`input[name="apellido"]`);
+            const celularInput = document.querySelector(`input[name="celular"]`);
+            const affairInput = document.querySelector(`input[name="affair"]`);
+            const messageInput = document.querySelector(`textarea[name="message"]`);
+        
+        const nombre = nombreInput.value;
+        const apellido = apellidoInput.value;
+
 
 
 			Swal.fire({
@@ -42,7 +51,13 @@ const boton = document.getElementById(`botonera`);
                 title: `Registro exitoso!`,
                 text: `Hola ${nombre} ${apellido}, su mensaje será respondido en breve.`,
             }).then((result) => {
-                if (result.isConfirmed){  document.getElementById("contactform").reset();
+                if (result.isConfirmed){   
+                nombreInput.value = "";
+                apellidoInput.value = "";
+                celularInput.value = "";
+                affairInput.value = "";
+                messageInput.value = "";
+    
             }    
-    })
-    })
+    });
+    });

@@ -3,7 +3,7 @@ let section = document.getElementById("contactform");
 
 contactform.innerHTML = `        <form action="">
 <p>
-    <label>Nombre</label>
+    <label id="nombre">Nombre</label>
     <input type="text" name="nombre">
 </p>
 <p>
@@ -30,10 +30,18 @@ contactform.innerHTML = `        <form action="">
 </form>`
 
 const boton = document.getElementById(`botonera`);
-		boton.addEventListener("click", () => {
+		boton.addEventListener("click", (event) => {
+            event.preventDefault()
+
+            const nombre = document.querySelector(`input[name="nombre"]`).value;
+            const apellido = document.querySelector(`input[name="apellido"]`).value;
+
 			Swal.fire({
-                icon: 'success',
-                title: 'Registro exitoso!',
-                text: 'Su mensaje sera respondido en breves.',
-            })}
+                icon: "success",
+                title: "Registro exitoso!",
+                text: "Hola ${nombre} ${apellido}, su mensaje será respondido en breve.",
+            })
+        
+        }
         )
+

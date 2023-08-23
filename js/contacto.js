@@ -33,15 +33,16 @@ const boton = document.getElementById(`botonera`);
 		boton.addEventListener("click", (event) => {
             event.preventDefault()
 
-            const nombre = document.querySelector(`input[name="nombre"]`).value;
-            const apellido = document.querySelector(`input[name="apellido"]`).value;
+        const nombre = document.querySelector(`input[name="nombre"]`).value;
+        const apellido = document.querySelector(`input[name="apellido"]`).value;
+
 
 			Swal.fire({
-                icon: "success",
-                title: "Registro exitoso!",
-                text: "Hola ${nombre} ${apellido}, su mensaje será respondido en breve.",
-            })
-        
-        }
-        )
-
+                icon: `success`,
+                title: `Registro exitoso!`,
+                text: `Hola ${nombre} ${apellido}, su mensaje será respondido en breve.`,
+            }).then((result) => {
+                if (result.isConfirmed){  document.getElementById("contactform").reset();
+            }    
+    })
+    })

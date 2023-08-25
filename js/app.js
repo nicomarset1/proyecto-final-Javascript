@@ -39,6 +39,7 @@ const agregarAlCarrito = (productos, id) => {
 	mostrarCarrito();
 };
 
+//CONTENEDOR
 const mostrarCarrito = () => {
 	const contenedorCarrito = document.querySelector(".carrito");
 	contenedorCarrito.innerHTML = "";
@@ -49,6 +50,8 @@ const mostrarCarrito = () => {
 		const contenedorTotal = document.createElement("p");
 		actualizarTotal(contenedorTotal);
 		contenedorCarrito.appendChild(contenedorTotal);
+
+//RECORRO EL ARRAY Y POR CAADA UNO CREO UNA CARD
 		carrito.forEach((producto) => {
 			const li = document.createElement("li");
 			li.innerHTML = `
@@ -115,6 +118,7 @@ const actualizarTotal = (contenedor) => {
 	contenedor.textContent = `Total: $${total}`;
 };
 
+//TRAEMOS LOS PRODUCTOS DEL JSON LOCAL
 fetch("./js/mouse.json")
 	.then((response) => response.json())
 	.then((productos) => {

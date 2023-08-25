@@ -1,3 +1,4 @@
+//ARMANDO EL APARTADO DE CONTACTO
 let section = document.getElementById("contactform");
 
 
@@ -29,6 +30,7 @@ contactform.innerHTML = `        <form action="">
 </p>
 </form>`
 
+//AHORA REINICIAMOS EL FORMULARIO LUEGO DE ENVIARLO
 const formulario = document.querySelector("#contactform");
 
 const boton = document.getElementById(`botonera`);
@@ -44,8 +46,7 @@ const boton = document.getElementById(`botonera`);
         const nombre = nombreInput.value;
         const apellido = apellidoInput.value;
 
-
-
+//COLOCAMOS UNA ALERTA
 			Swal.fire({
                 icon: `success`,
                 title: `Registro exitoso!`,

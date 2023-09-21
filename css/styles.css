@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	background-color: rgb(54, 54, 54);
+	background-color: rgb(25, 25, 25);
 	height: 120px;
 	margin: 20px;
 	border-radius: 15px;
@@ -31,7 +31,7 @@ header ul li a {
 	border-radius: 15px;
 	transition: .5s;}
 header ul li a:hover {
-	color: rgb(54, 54, 54);
+	color: rgb(25, 25, 25);
 	background-color: rgb(253, 88, 38); }
 header nav {
 	width: 100%;
@@ -45,10 +45,10 @@ header nav .logo {
 }
 
 main h1{
-	color: rgb(54, 54, 54);
+	color: rgb(25, 25, 25);
 }
 main section h2{
-	color: rgb(54, 54, 54);
+	color: rgb(25, 25, 25);
 }
 
 .logo{
@@ -74,7 +74,7 @@ font-size: 35px;
 }
 
 .product-list li {
-	border: 1px solid rgb(54, 54, 54);
+	border: 1px solid rgb(25, 25, 25);
 	padding: 1em;
 	background-color: white;
 	border-radius: 15PX;
@@ -102,10 +102,11 @@ font-size: 35px;
 	cursor: pointer;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgb(54, 54, 54);
-	color: white;
+	background-color: rgb(253, 88, 38);
+	color: rgb(25, 25, 25);
+	border: rgb(25, 25, 25) 1px solid;
 	border-radius: 12px;
-	padding: 1rem 0.8rem;
+	padding: 1rem 2rem;
 	text-decoration: none;
 	transition: background-color 0.2s ease;
 }
@@ -118,13 +119,13 @@ font-size: 35px;
 .add-to-cart:hover,
 .remove:hover,
 .button:hover {
-	background-color: rgb(253, 88, 38);
-	color: rgb(54, 54, 54);
-	border: 1px solid rgb(54, 54, 54);
+	background-color: rgb(249, 130, 93);
+	color: rgb(25, 25, 25);
+	border: 1px solid rgb(25, 25, 25);
 }
 
 footer {
-	border-top: 1px solid rgb(54, 54, 54);
+	border-top: 1px solid rgb(25, 25, 25);
 }
 
 footer p {
@@ -141,7 +142,7 @@ footer p {
 }
 
 .productsCart li {
-	border-bottom: 1px solid rgb(54, 54, 54);
+	border-bottom: 1px solid rgb(25, 25, 25);
 	padding: 1rem;
 	display: flex;
 	list-style: none;
@@ -207,15 +208,15 @@ padding: 10px;}
 	border: #ffffff 1px solid;
 	text-align: center;
 	font-size: 3em;
-	color: rgb(54, 54, 54); }
+	color: rgb(25, 25, 25); }
 .main-contacto .logo span {
-	color: rgb(54, 54, 54); }
+	color: rgb(25, 25, 25); }
 .main-contacto .contact-wrapper > * {
 	padding: 1em; }
 .main-contacto .contact-wrapper {
 	box-shadow: 0 0 20px 0 white }
 .main-contacto .contact-wrapper #contactform {
-	background: rgb(54, 54, 54);
+	background: rgb(25, 25, 25);
 border-radius: 15px; }
 .main-contacto .contact-wrapper #contactform form {
 	display: grid;
@@ -233,16 +234,16 @@ border-radius: 15px; }
 	border: none;
 	background: none;
 	outline: 0;
-	color: rgb(54, 54, 54);
-	border-bottom: 1px solid rgb(54, 54, 54);
+	color: rgb(25, 25, 25);
+	border-bottom: 1px solid rgb(25, 25, 25);
 	/**/
-	background: white;
+	background: rgb(253, 88, 38);
 	border: 0;
 	text-transform: uppercase;
 	padding: 1em; }
 .main-contacto .contact-wrapper #contactform form button:hover {
-	background: rgb(253, 88, 38);
-	transition:.5s ease-out;
+	background: rgb(249, 130, 93);
+	transition:.2s ease-out;
 	outline: 0; }
 .main-contacto .contact-wrapper #contactform form button:focus {
 	background: white;
@@ -265,7 +266,7 @@ border-radius: 15px; }
 	color: white;
 	border-bottom: 1px solid white; }
 .main-contacto .contact-wrapper .contact-info {
-	background: rgb(44, 44, 44); 
+	background: rgb(21, 21, 21); 
 border-radius: 15px;}
 .main-contacto .contact-wrapper .contact-info h4 {
 	text-align: center;
@@ -313,9 +314,9 @@ border-radius: 15px;}
 .bnv{
 	width: 90%;
 	text-align: center;
-	border: 1px solid rgb(54, 54, 54);
+	border: 1px solid rgb(25, 25, 25);
 	border-radius: 15px;
-	background-color: rgb(54, 54, 54);
+	background-color: rgb(25, 25, 25);
 	color: white;
 }
 
@@ -326,20 +327,20 @@ border-radius: 15px;}
 	}
 
 	.btn{
-		background-color: rgb(54, 54, 54);
-		color: white;
+		border: 1px solid rgb(25, 25, 25);
+		background-color: rgb(253, 88, 38);
+		color: rgb(25, 25, 25);
 		border-radius: 7px;
 	}
 
 	.btn:hover{
-		border: 1px solid rgb(54, 54, 54);
-		background-color: rgb(253, 88, 38);
-		color: rgb(54, 54, 54);
+		background-color: rgb(249, 130, 93);
+		border: 1px solid rgb(25, 25, 25);
 	}
 
 	.card {
 		margin: 30PX;
-		border: 1px solid rgb(54, 54, 54);
+		border: 1px solid rgb(25, 25, 25);
 	}
 
 	.card-title{
@@ -372,7 +373,7 @@ border-radius: 15px;}
 		width: 100%;
 		height: 50px;
 		margin-top: 30px;
-		background-color: rgb(54, 54, 54);
+		background-color: rgb(25, 25, 25);
 		text-align: center;
 	}
 
@@ -385,7 +386,7 @@ border-radius: 15px;}
 	.final{
 		width: 100%;
 		margin-top: 20px;
-		border-top: 1px solid rgb(54, 54, 54);
+		border-top: 1px solid rgb(25, 25, 25);
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
